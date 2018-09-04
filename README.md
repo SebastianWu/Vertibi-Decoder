@@ -7,6 +7,20 @@ Author: Yuanxu Wu
 
 python 3.6.4
 
+## Predict POS-tag for unknown word
+
+I implemented predicting the pos-tag of unknown word using a morphology method . 
+
+In predicting unknown words’ pos-tag section, I generate six cases:  
+
+•	Word starts with a particular prefix  
+•	Word ends with a particular suffix  
+•	Word first letter is capital  
+•	Word contains a hyphen  
+•	Word is all upper case  
+•	Word is upper case, and has a digit and a dash  
+
+
 ## There are five input value you can change:  
 
   •	train_file_name = "WSJ_02-21.pos" # training file name  
@@ -15,3 +29,7 @@ python 3.6.4
   •	allow_to_use_pickled_data = 1 # allow to use pickled data or not  
   •	using_additional_training_file = 0 # add other training file or not  
   •	addition_training_file_name = "WSJ_24.pos" # additional training file name  
+
+## How to compile and run the code
+
+python3 MyVertibiDecoder.py
